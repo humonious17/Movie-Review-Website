@@ -1,0 +1,76 @@
+.movie-carousel-container {
+    width: 100vw;
+    background-color: black;
+}
+
+.movie-poster {
+    height:300px;
+}
+
+.movie-poster > img {
+    height: 100%;
+    width: 100%;
+    object-fit: inherit;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.movie-card-container {
+    height: 550px;
+    background-color: black;
+
+}
+
+.movie-card {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,1)), var(--img);
+}
+
+.movie-details {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    color: white;
+}
+
+h1 {
+    margin-left: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.playButton {
+    font-size: 40px;
+    margin: 20px;
+    opacity: 0.7;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.playButtonIcon {
+    color: white;
+}
+
+.playButton:hover {
+    font-size: 50px;
+    opacity: 1;
+}
+
+@media only screen and (max-width : 800px) {
+    .movie-details {
+        
+        flex-direction: column;
+        align-items: left;
+        bottom: 400px;
+    }
+}
